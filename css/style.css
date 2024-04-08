@@ -1,0 +1,244 @@
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f7f7f7;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Global reset end */
+
+:root {
+  --main-orange: #f16718;
+  --secondary-orange: #ff9b62;
+  --blue-1: #162542;
+  --blue-2: #7b8bad;
+  --white-1: #e8eff2;
+  --white-2: #ffffff;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+header {
+  display: flex;
+  max-width: 1110px;
+  margin: 64px auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 40px;
+}
+.order_button button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 16px 26px;
+  background-color: var(--white-1);
+  border: none;
+  border-radius: 8px;
+  transition: 500ms;
+}
+.order_button button:hover {
+  background-color: var(--blue-1);
+  transition: 500ms;
+  color: var(--white-2);
+}
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 100%;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.hero_text {
+  max-width: 450px;
+}
+.hero_text h1 {
+  font-size: 5.6rem;
+  color: var(--blue-1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hero_text p {
+  color: var(--blue-2);
+  font-size: 1.8rem;
+  margin-top: 24px;
+}
+.hero_img img {
+  width: 540px;
+}
+.hero_text_buttons {
+  margin-top: 40px;
+}
+.hero_text_buttons button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 16px 26px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.order {
+  background-color: var(--main-orange);
+  color: var(--white-2);
+}
+.release {
+  background-color: transparent;
+  color: var(--blue-2);
+}
+.background_box {
+  background-color: var(--white-1);
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  display: none;
+}
