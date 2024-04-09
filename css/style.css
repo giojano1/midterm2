@@ -150,7 +150,7 @@ p,
 h1,
 h2,
 h3 {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 /* Global reset end */
 
@@ -438,5 +438,22 @@ footer p span {
   }
   .hero_text_buttons button {
     padding: 16px 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero_text {
+    min-width: 280px;
+  }
+  .hero_text h1 {
+    font-size: 4rem;
+  }
+  .hero_text p {
+    font-size: 1.3rem;
+  }
+  .hero_text_buttons button {
+    font-size: 1.2rem;
+  }
+  .ad_text span {
+    font-size: 2rem;
   }
 }
