@@ -228,7 +228,12 @@ header {
 }
 .order {
   background-color: var(--main-orange);
+  transition: 500ms;
   color: var(--white-2);
+}
+.order:hover {
+  background-color: var(--secondary-orange);
+  transition: 500ms;
 }
 .release {
   background-color: transparent;
