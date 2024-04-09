@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html,
@@ -144,7 +145,13 @@ table {
 button {
   cursor: pointer;
 }
-
+span,
+p,
+h1,
+h2,
+h3 {
+  overflow-y: hidden;
+}
 /* Global reset end */
 
 :root {
